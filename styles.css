@@ -221,6 +221,7 @@ main {
   text-transform: uppercase;
 }
 
+
 .nav__list {
   margin-right: 1.5em;
   display: flex;
@@ -284,7 +285,7 @@ main {
 }
 
 .project:hover,
-.skills__list-item:hover,
+.stack__list-item:hover,
 .btn--plain:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
@@ -312,16 +313,19 @@ main {
   margin-left: 0.5em;
 }
 
-.skills__list {
+.stack__list {
   max-width: 600px;
   width: 95%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1em;           /* keeps your new spacing */
+  align-items: flex-start; /* align items at the top for neat piles */
 }
 
-.skills__list-item {
+
+.stack__list-item {
   margin: 0.5em;
 }
 
@@ -454,5 +458,6 @@ main {
   background-color: transparent; /* avoid white background */
 }
 }
+
 
 
